@@ -1,0 +1,50 @@
+1. Explique a diferença entre a abordagem iterativa e recursiva no cálculo do fatorial.
+-Abordagem iterativa usa laços de repetição como for e while, começando com um valor inicial e multiplicando até chegar no resultado.
+
+-Abordagem recursiva utiliza função que chama ela mesma até chegar no resultado base, no caso seria o fatorial do 1
+
+2. Se no código do fatorial recursivo você remover a linha:
+if (N <= 1) return 1;
+o que acontecerá se chamar fatorial(3)? Explique o motivo.
+
+-A função vai entrar em chamada infinita pois foi retirado o valor base.
+
+3. Como você faria para modificar o código do fatorial iterativo para imprimir cada multiplicação intermediária?
+Exemplo:
+1 x 2 = 2
+2 x 3 = 6
+etc.
+
+Escreva apenas a lógica, não o código completo.
+
+-Criar variável que comece em um, criar um laço iterativo que comece com 2 e multiplique o resultado pelo numero atual.
+1 x 2 = 2
+2 x 3 = 6
+6 x 4 = 24
+24 x 5 = 120
+
+4. Para fatorial(4), quais são as chamadas feitas pela versão recursiva?
+-fatorial(4)
+ → fatorial(3)
+   → fatorial(2)
+     → fatorial(1)
+
+5. Se executarmos o código recursivo de Fibonacci para n = 5, quais são todas as chamadas de função que ocorrerão?
+-Para chegar no 5 devemos descobrir o do 4 e 3, para descobrir o 4 temos que descobrir 3 e 2, para descobrir o 3, temos que descobrir o 2 e 1, e para descobrir o 2 devemos descobrir o 1.
+
+
+-fib(5)
+fib(4)
+fib(3)
+fib(2)
+fib(1)
+fib(0)
+fib(1)
+fib(2)
+fib(1)
+fib(0)
+fib(3)
+fib(2)
+fib(1)
+fib(0)
+fib(1)
