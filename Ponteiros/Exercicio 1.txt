@@ -1,0 +1,19 @@
+Exercício 1:
+int x = 5, y = 10;
+int *p = &x, *q = &y;
+*p = *q + *p;
+*q = *p - *q;
+*p = *p - *q;
+
+1- x = 10 e y = 5
+
+2- x começa 5 e y começa 10
+	p = 10 + 5 > p começa a valer 15
+	q = 15 - 10 > q começa a valer 5
+	p = 15 - 5 > p começa a valer 10
+p aponta para X e q aponta para Y logo x =10 e y = 5 no final.
+
+3-Está trocando valores sem precisar de uma variável temporária.
+	
+Exercício 2:
+
